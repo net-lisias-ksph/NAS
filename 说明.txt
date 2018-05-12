@@ -1,0 +1,8 @@
+添加的模块配置：
+MODULE
+{
+    name = FlagWire
+    rad = 1
+    mainBody = Cube
+    space = 0.3
+}
