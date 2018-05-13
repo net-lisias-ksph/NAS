@@ -80,11 +80,12 @@ namespace AntiSubmarineWeapon
             {
                 child.transform.parent = temp.transform;
                 float length = (startPos - endPos).magnitude;
+                length *= 0.974815f;
                 child.transform.localEulerAngles = Vector3.zero;
                 child.transform.LookAt(endPos);
                 child.transform.parent = father.transform;
                 child.transform.localScale = new Vector3(rad, rad, length * 20);
-                flags.transform.localScale = new Vector3(1.0f / rad, 1.0f / rad, 1.0f / (length * 20));
+                flags.transform.localScale = new Vector3(1.0f / rad, 1.0f / rad, 1.0f / (length* 20));
                 ShowOrHideFlags(length);
             }
         }
@@ -97,13 +98,10 @@ namespace AntiSubmarineWeapon
                 int number = (int)(((Mathf.Cos(randomNumber + i * 123) + 1) / 2.0) * 26);
                 if (mats != null)
                 {
-                    Debug.Log(flags.transform.GetChild(i).Find("box/flagTransform").gameObject.name);
-
                     flags.transform.GetChild(i).Find("box/flagTransform").GetComponent<MeshRenderer>().material = mats[number];
-                    flags.transform.GetChild(i).Find("box/flagTransform2").GetComponent<MeshRenderer>().material = mats[number];
-                    flags.transform.GetChild(i).Find("box/flagMiddle").GetComponent<MeshRenderer>().material = mats[number];
+                    //flags.transform.GetChild(i).Find("box/flagTransform2").GetComponent<MeshRenderer>().material = mats[number];
+                    //flags.transform.GetChild(i).Find("box/flagMiddle").GetComponent<MeshRenderer>().material = mats[number];
                     flags.transform.GetChild(i).Find("box/flagMiddle2").GetComponent<MeshRenderer>().material = mats[number];
-
                 }
             }
         }
@@ -152,8 +150,8 @@ namespace AntiSubmarineWeapon
                         int a = i + 1;
                         int number = (int)(((Mathf.Cos(randomNumber + a * 123) + 1) / 2.0) * 26);
                         temp.transform.Find("box/flagTransform").GetComponent<MeshRenderer>().material = mats[number];
-                        temp.transform.Find("box/flagTransform2").GetComponent<MeshRenderer>().material = mats[number];
-                        temp.transform.Find("box/flagMiddle").GetComponent<MeshRenderer>().material = mats[number];
+                        //temp.transform.Find("box/flagTransform2").GetComponent<MeshRenderer>().material = mats[number];
+                        //temp.transform.Find("box/flagMiddle").GetComponent<MeshRenderer>().material = mats[number];
                         temp.transform.Find("box/flagMiddle2").GetComponent<MeshRenderer>().material = mats[number];
                     }
                 }
@@ -201,8 +199,8 @@ namespace AntiSubmarineWeapon
         private void WaveFlag(GameObject flag)
         {
             Wave(flag.transform.Find("box/flagTransform").GetComponent<MeshFilter>().mesh.vertices, flag.transform.Find("box/flagTransform").GetComponent<MeshFilter>(), flag.transform.Find("box").GetInstanceID());
-            Wave(flag.transform.Find("box/flagMiddle").GetComponent<MeshFilter>().mesh.vertices, flag.transform.Find("box/flagMiddle").GetComponent<MeshFilter>(), flag.transform.Find("box").GetInstanceID());
-            Wave(flag.transform.Find("box/flagTransform2").GetComponent<MeshFilter>().mesh.vertices, flag.transform.Find("box/flagTransform2").GetComponent<MeshFilter>(), flag.transform.Find("box").GetInstanceID());
+            //Wave(flag.transform.Find("box/flagMiddle").GetComponent<MeshFilter>().mesh.vertices, flag.transform.Find("box/flagMiddle").GetComponent<MeshFilter>(), flag.transform.Find("box").GetInstanceID());
+            //Wave(flag.transform.Find("box/flagTransform2").GetComponent<MeshFilter>().mesh.vertices, flag.transform.Find("box/flagTransform2").GetComponent<MeshFilter>(), flag.transform.Find("box").GetInstanceID());
             WaveT(flag.transform.Find("box/flagMiddle2").GetComponent<MeshFilter>().mesh.vertices, flag.transform.Find("box/flagMiddle2").GetComponent<MeshFilter>(), flag.transform.Find("box").GetInstanceID());
         }
 
@@ -232,9 +230,13 @@ namespace AntiSubmarineWeapon
                         for (int i = 0; i < 26; i++)
                         {
                             mainTex[i] = GameDatabase.Instance.GetTexture("NAS/Textures/SignalFlags/Alphabet/" + findName[i], false);
-                            mats[i] = new Material(Shader.Find("KSP/Alpha/Translucent"));
+                            mats[i] = new Material(Shader.Find("KSP/Alpha/Cutoff"));
                             mats[i].SetTexture("_MainTex", mainTex[i]);
+                            mats[i].SetColor("_TintColor", Color.white);
                         }
+                        flags.Find("flag/box/flagMiddle").gameObject.SetActive(false);
+                        //flags.Find("flag/box/flagTransform").gameObject.SetActive(false);
+                        flags.Find("flag/box/flagTransform2").gameObject.SetActive(false);
                     }
                     if (HighLogic.LoadedSceneIsEditor)
                     {
@@ -332,6 +334,7 @@ namespace AntiSubmarineWeapon
                                 CreateMesh(startPos, endPos, rad);
                                 if (Input.GetMouseButtonDown(1))
                                 {
+                                    GameDatabase.Instance.GetShader("");
                                     var collider = child.transform.Find("Cylinder").GetComponent<CapsuleCollider>();
                                     collider.enabled = true;
                                     objLocalScale = child.transform.localScale;
