@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +19,8 @@ namespace AntiSubmarineWeapon
         public float maxDropAltitude;
         [KSPField(isPersistant = true)]
         public float maxDropSpeed;
+        [KSPField(isPersistant = true)]
+        public bool useMouse = true;
 
         private GameObject renderLine;
         private GameObject renderLineP1;
@@ -90,7 +92,7 @@ namespace AntiSubmarineWeapon
                 && vessel.speed < this.maxDropSpeed
                 && vessel.Parts.Count > 1
                 && FlightGlobals.fetch.activeVessel == this.vessel
-                && KeyDown(KeyCode.L))
+                && (useMouse ? RayTest() : KeyDown(KeyCode.L)))
             {
                 var colorTemp = this.color;
                 colorTemp.a = color.a / 2;
@@ -102,8 +104,8 @@ namespace AntiSubmarineWeapon
                 vector.endWidth = Width / 100;
                 vector.positionCount = 2;
                 this.renderLineP2.transform.localPosition = new Vector3(0, 0, 1);
-                var p1 = this.renderLineP1.transform.position - vessel.upAxis * (vessel.altitude-0.3f);
-                var p2 = this.renderLineP2.transform.position - vessel.upAxis * (vessel.altitude-0.3f);
+                var p1 = this.renderLineP1.transform.position - vessel.upAxis * (vessel.altitude - 0.3f);
+                var p2 = this.renderLineP2.transform.position - vessel.upAxis * (vessel.altitude - 0.3f);
                 p2 = p1 + Vector3.ProjectOnPlane(p2 - p1, vessel.upAxis).normalized * Length;
                 vector.SetPosition(0, p1);
                 vector.SetPosition(1, p2);
