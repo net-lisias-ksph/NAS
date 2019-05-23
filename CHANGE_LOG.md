@@ -1,5 +1,20 @@
 # NAS - Naval Artillery System :: Change Log
 
+* 2017-0617: 0.6.5 (Acea) for KSP 1.3.0
+	+ 0.6.5 (IMPORTANT) - "Crossroads"
+	+ Special thanks to forum user eboshi, who greatly helped with localization progress of NAS!*
+		- Updated plugins for compatibility with KSP 1.3, and added the function of setting depths of all torpedoes/depth charges on board (UI localized in simplified Chinese and Japanese).
+		- Updated to latest C.A.L++.
+		- Tweaked Fritz X Guided Anti-ship Glide Bomb so it can work more smoothly.
+		- Removed LoadingTipsPlus configuring file.
+		- Rebalanced small caliber AA weapons, now they should be about 1/3 less powerful, and buffed range of Type 96 25 mm AT/AA Gun Triple Mount.
+		- Overhauled all the tags, now it would be easier to search any parts.
+		- Applied new exhaust effects to all torpedoes/rockets and Fritz X, now they behave normal.
+		- Applied armor piercing settings to CA/BB guns, and rebalanced their powers.
+		- Added localization support to simplified Chinese and Japanese. Sorry that we only have speakers of these two languages among our team members and volunteers, please help us with all these untranslated texts.
+		- Added 2 new parts:
+		- Kriegsmarine: 28 cm SK C/28 Twin Turret
+		- US Army: 14-inch M1909 Twin Turret (Fort Drum Type)
 * 2017-0217: 0.6.0.6 (Acea) for KSP 1.2.2
 	+ 0.6.0.6 (FIX) - "Naval Holiday"
 		- Updated plugins for full compatibility with KSP 1.2.2.
