@@ -1,5 +1,9 @@
 # NAS - Naval Artillery System :: Change Log
 
+* 2019-0125: 0.7.0.1 (Acea) for KSP 1.6.1 (Synthetic version)
+	+ A temporary fix for 1.6.x could be found [here](https://www.dropbox.com/s/wvu4wdv1e6ldqsg/AntiSubmarineWeapon.dll?dl=1) (tested and all core functions work well)
+		- AntiSubmarineWeapon.dll added to the Archive. Needs previous version.
+	+ Notice that this does not really fix the issue that torpedoes do not explode on impact, we're trying to figure out what went wrong. You may need to manually detonate them meanwhile.
 * 2018-0428: 0.7.0 (Acea) for KSP 1.4.3
 	+ 0.7.0 (IMPORTANT) - "Land of Dragon"
 		- Used a new compression method to get a slightly lighter package.
