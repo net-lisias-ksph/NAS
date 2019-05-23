@@ -1,5 +1,16 @@
 # NAS - Naval Artillery System :: Change Log
 
+* 2017-1105: 0.6.6.1 (Acea) for KSP 1.3.1
+	+ 0.6.6.1 (FIX) - "Our Freedom"
+		- Updated plugin to adapt to KSP 1.3.1 and latest BDArmory Continued.
+		- Retextured Tallboy 12,000 lb Earthquake Bomb.
+		- Redefined all radars for new BDAc features (now they consume ElectricCharge).
+		- Stopped redistributing C.A.L++ since all ammos have been merged into BDAc.
+		- Minor changes in Japanese and Spanish descriptions.
+		- Inherited 1-01A Universal Ammunition Box and BDExplosiveTweakScale.cfg from C.A.L++, old users could still use them.
+		- FuMO 61 "Hohentwiel U" radar can no longer lock targets.
+		- Corrected size of two Bofors 40 mm L/60's (Mark 4 Quad Mount & QF 40 mm Mk I Mount).
+		- Added a custom part category for NAS parts.
 * 2017-1001: 0.6.6 (Acea) for KSP 1.3.0
 	+ 0.6.6 (IMPORTANT) - "Our Freedom"
 		- Updated plugin to adapt to latest BDArmory Continued.
