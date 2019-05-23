@@ -1,5 +1,27 @@
 # NAS - Naval Artillery System :: Change Log
 
+* 2016-0320: 0.4.0 (Acea) for KSP 0.7.3
+	+ 0.4.0 (IMPORTANT) - "Atlantic Epic"
+	+ Updated C.A.L++ to 0.1.0 (with all existing ammo boxes deprecated).
+	+ Slightly improved anti-aircraft weapon muzzle fire effects.
+	+ Removed the old fake Mark 14 torpedo launcher.
+	+ Redistributed the Firespitter plugin by Snjo for the new universal ammo box in
+	+ C.A.L++.
+	+ Redid model of 20.3 cm SK/C 34.
+	+ Most light anti-aircraft guns now contain their own ammunitions. (Amounts may
+	+ Fixed an issue that some bombs bounce on the water surface.
+	+ Changed guidance mode of Fritz X to beam riding.
+	+ Applied a temporary buoyancy to torpedoes before we have a specific guidance.
+	+ Added 8 new parts:
+		- Kriegsmarine: 10.5 cm SK C/33 Naval Gun
+		- Les Forces Navales Francaises Libres (Free French Naval Forces): Canon de
+	+ 138 mm Modele 1934 Twin Turret
+		- Regia Marina: Cannone da 381/50 Ansaldo M1934, 90 mm/50 (3.5") Ansaldo
+	+ Model 1938, Cannone-Mitragliera da 37/54 (Breda) Model 1932
+		- Royal Navy: BL 14 inch Mk VII Naval Gun Quadruple Mount, QF 2-pounder
+		- Pom-pom" Mark VIA Mount
+			- US Navy: Mark 15 Torpedo (launcher would come in next patch due to some
+	+ issues)
 * 2016-0215: 0.3.6 (Acea) for KSP 0.7.3
 	+ 0.3.6 (IMPORTANT) - "Imperial Fleet"
 	+ Thanks harpwner for his excellent work on muzzle fire effects!
