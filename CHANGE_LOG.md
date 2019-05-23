@@ -1,5 +1,12 @@
 # NAS - Naval Artillery System :: Change Log
 
+* 2017-0702: 0.6.5.2 (Acea) for KSP 1.3.0
+	+ 0.6.5.2 (FIX) - "Crossroads"
+	+ Special thanks to forum user Next_Star_Industries ,for his help with Russian localization!*
+		- Tweaked size of torpedo/DC settings UI.
+		- Significantly optimized gun and torpedo sound effects (which caused slightly larger file sizes).
+		- Rechecked existing localization files and corrected a few spelling mistakes.
+		- Added localization support to Russian.
 * 2017-0625: 0.6.5.1 (Acea) for KSP 1.3.0
 	+ 0.6.5.1 (FIX) - "Crossroads"
 	+ Special thanks to forum user fitiales, for his Spanish localization texts!*
