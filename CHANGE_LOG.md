@@ -1,5 +1,15 @@
 # NAS - Naval Artillery System :: Change Log
 
+* 2017-0625: 0.6.5.1 (Acea) for KSP 1.3.0
+	+ 0.6.5.1 (FIX) - "Crossroads"
+	+ Special thanks to forum user fitiales, for his Spanish localization texts!*
+		- Updated part list.
+		- Tweaked overheating rate of 10 cm/65 Type 98 Naval Gun.
+		- Tweaked deviation angles of all guns (once which were too accurate) to make them more realistic and still somehow player-friendly, based on following rules:
+		- Any medium to large caliber weapon (larger than 75 mm) would have a deviation that would match the average length of the same class ships at the edge of effective range.
+		- Side cannons, except 15.5 cm/60 3rd Year Type Naval Gun Triple Turret (cruiser gun), would use a destroyer template, large caliber AA guns use 2/3 of maximum range as effective range.
+		- Fixed localization path of 28 cm SK C/28 Twin Turret.
+		- Added localization support to Spanish.
 * 2017-0617: 0.6.5 (Acea) for KSP 1.3.0
 	+ 0.6.5 (IMPORTANT) - "Crossroads"
 	+ Special thanks to forum user eboshi, who greatly helped with localization progress of NAS!*
