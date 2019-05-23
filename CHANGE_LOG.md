@@ -1,5 +1,10 @@
 # NAS - Naval Artillery System :: Change Log
 
+* 2017-0217: 0.6.0.6 (Acea) for KSP 1.2.2
+	+ 0.6.0.6 (FIX) - "Naval Holiday"
+		- Updated plugins for full compatibility with KSP 1.2.2.
+		- Updated to latest C.A.L++.
+		- Fixed a model glitch of Oerlikon 20 mm L70 Cannon Mk 20 Twin Mount.
 * 2016-1202: 0.6.0.5 (Acea) for KSP 1.2.1
 	+ 0.6.0.5 (FIX) - "Naval Holiday"
 		- Fixed an issue which made Type 91 Torpedo Mod 2 "Thunder Fish" staying still in water.
