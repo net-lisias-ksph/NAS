@@ -1,5 +1,15 @@
 # NAS - Naval Artillery System :: Change Log
 
+* 2016-0806: 0.5.0.5 (Acea) for KSP 0.7.3
+	+ 0.5.0.5 (HOTFIX) - "Red Star over Oceans"
+	+ Temporary solution to ASW plugin spamming log files. (Toolbar button is a
+	+ placeholder)
+	+ Strengthened joint of 41 cm/45 3rd Year Type Naval Gun.
+	+ Fixed wrong size of 37 mm/67 66-K Automatic Anti-aircraft Gun Turret, 3.7 cm
+	+ SK C/30 Anti-aircraft Gun Dual Mount, Bofors 40 mm Dual Mount, Dual M2HB Mount
+	+ and Oerlikon 20 mm Dual Mount.
+	+ Fixed accuracy settings of most guns.
+	+ Added weapon manager module to STEN Mk. II Submachine Gun.
 * 2016-0320: 0.4.0 (Acea) for KSP 0.7.3
 	+ 0.4.0 (IMPORTANT) - "Atlantic Epic"
 	+ Updated C.A.L++ to 0.1.0 (with all existing ammo boxes deprecated).
