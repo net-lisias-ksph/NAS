@@ -1,5 +1,9 @@
 # NAS - Naval Artillery System :: Change Log
 
+* 2016-1202: 0.6.0.5 (Acea) for KSP 1.2.1
+	+ 0.6.0.5 (FIX) - "Naval Holiday"
+		- Fixed an issue which made Type 91 Torpedo Mod 2 "Thunder Fish" staying still in water.
+		- Fixed an issue which caused depth charges to explode instantly after being dropped.
 * 2016-1103: 0.6.0 (Acea) for KSP 1.2.1
 	+ 0.6.0 (IMPORTANT) - "Naval Holiday"
 	+ Thanks to TheBeardyPenguin & TAPEGaming on YouTube, for their awesome Fall Of Kerbin series and multiple battle tests in actual game, which greatly helped us improve NAS!
