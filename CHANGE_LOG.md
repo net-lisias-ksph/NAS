@@ -1,5 +1,8 @@
 # NAS - Naval Artillery System :: Change Log
 
+* 2016-0909: 0.5.5.7 (Acea) for KSP 0.7.3
+	+ 0.5.5.7/F (HOTFIX) - "Lend-Lease Act"
+	+ Fixed ammo type definition of 3-inch Naval Gun Mount Mark 21.
 * 2016-0806: 0.5.0.5 (Acea) for KSP 0.7.3
 	+ 0.5.0.5 (HOTFIX) - "Red Star over Oceans"
 	+ Temporary solution to ASW plugin spamming log files. (Toolbar button is a
