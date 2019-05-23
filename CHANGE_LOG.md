@@ -1,5 +1,30 @@
 # NAS - Naval Artillery System :: Change Log
 
+* 2018-0428: 0.7.0 (Acea) for KSP 1.4.3
+	+ 0.7.0 (IMPORTANT) - "Land of Dragon"
+		- Used a new compression method to get a slightly lighter package.
+		- Updated plugin to adapt to latest BDArmory Continued.
+		- Tweaked yaw speed of 12.7 cm/50 cal Type 3 Naval Gun Dual Mount Turret up to 6 dps.
+		- Tweaked up overheat speed of most small caliber AA guns.
+		- Tweaked thrust time of shipborne torpedoes to match real world values.
+		- Tweaked QF 2-pounder "Pom-pom" Mark ⅥA Mount's rate of fire down to 96 rpm.
+		- Torpedoes now use the sound effect from vanilla BDAc (old sound effect removed).
+		- Temporarily removed BDAc short name localization files.
+		- Removed the DEFORMATTER file (all localization tags are sorted into separate part cfgs).
+		- Remade model of 5"/38 cal Mk 12 Naval Gun Mark 30 Turret and all torpedoes.
+		- 6"/47 caliber Mark 16 Gun Triple Turret could fire VT shells (for AA battles) now.
+		- Shortened default drop times of High Velocity Aircraft Rocket (HVAR) and Tiny Tim Unguided Rocket.
+		- Propellers of torpedoes would rotate now when deployed.
+		- Overhauled definitions of all parts/bullets according to new BDAc configurations.
+		- Optimized textures of some Japanese weapons.
+		- Minor changes in Chinese descriptions.
+		- High Velocity Aircraft Rocket (HVAR) and Tiny Tim Unguided Rocket have less thrusts now.
+		- Fixed Flag Pole now has a waving flag.
+		- Fixed bullet configuration of 28 cm SK C/28 Triple Turret.
+		- Enlarged lift area of Fritz X Guided Anti-ship Bomb, High Velocity Aircraft Rocket (HVAR) and Tiny Tim Unguided Rocket.
+		- Compressed more textures to reduce memory leak.
+		- Added 5 new parts:
+		- ROC Navy: 10.5 cm SK L/40 (Mitsubishi Version), BL 6 inch Mk XXI Naval Gun, Kiangnan 152 mm Single Mount; Misc: Aerial Flare Bomb, Depth Charge Rack
 * 2017-1105: 0.6.6.1 (Acea) for KSP 1.3.1
 	+ 0.6.6.1 (FIX) - "Our Freedom"
 		- Updated plugin to adapt to KSP 1.3.1 and latest BDArmory Continued.
