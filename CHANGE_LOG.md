@@ -1,5 +1,12 @@
 # NAS - Naval Artillery System :: Change Log
 
+* 2017-1001: 0.6.6 (Acea) for KSP 1.3.0
+	+ 0.6.6 (IMPORTANT) - "Our Freedom"
+		- Updated plugin to adapt to latest BDArmory Continued.
+		- Minor changes in Chinese descriptions and weapon type of depth charges.
+		- Added target engaging settings for Guard Mode.
+		- Added 1 new part:
+		- US Navy: Bofors 40 mm L/60 (Mark 4 Quad Mount)
 * 2017-0702: 0.6.5.2 (Acea) for KSP 1.3.0
 	+ 0.6.5.2 (FIX) - "Crossroads"
 	+ Special thanks to forum user Next_Star_Industries ,for his help with Russian localization!*
